@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { Table, Container, Row } from "react-bootstrap";
 import axios from "axios";
+import {Trumedtok} from './Trumedtok.js';
 
 const Bortles = () => {
   const [playerData, setPlayerData] = useState([]);
@@ -10,7 +11,7 @@ const Bortles = () => {
     const response = await axios.get
         ('https://project.trumedianetworks.com/api/nfl/player/2543477', {
                 headers: {
-                 Accept: 'application.json', tempToken: '478817da-785c-44c6-b5ab-fb0c285f9a74'
+                 Accept: 'application.json', tempToken: Trumedtok.api_token
          }
         }
     );
@@ -25,7 +26,8 @@ const Bortles = () => {
          <td class="text-center">{playerId.opponent}</td>
          <td class="text-center">{playerId.Att}</td>
          <td class="text-center">{playerId.Cmp}</td>
-         <td class="text-center" >{playerId.Rush}</td>
+         <td class="text-center">{playerId.PsYds}</td>
+         <td class="text-center">{playerId.PsTD}</td>
      </tr>
     );
   };
@@ -37,7 +39,7 @@ const Bortles = () => {
   return <div className="Bortles">
 
       <Container>
-        <Row class="text-center">BLAKE BORTLES STATS</Row>
+        <Row class="text-center">BLAKE BORTLES 2018 STATS</Row>
       </Container>
     
       <Table striped bordered Hover>
@@ -45,9 +47,9 @@ const Bortles = () => {
             <tr>
                 <th class="text-center">Week</th>
                 <th class="text-center">Opponent</th>
-                <th class="text-center" >Att</th>
-                <th class="text-center">Cmp</th>
-                <th class="text-center" >Rush</th>
+                <th class="text-center">Att</th>
+                <th class="text-center">PsYds</th>
+                <th class="text-center">PsTD</th>
             </tr>
         </thead>
         <tbody>
