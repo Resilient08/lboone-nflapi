@@ -1,3 +1,3 @@
 export const Trumedtok = {
-    api_token: '805b5b3b-1950-4b87-ab9c-2ba52de3d71c'
+    api_token: '9c730713-669b-4f51-a02a-588c13007eda'
 };

@@ -1,21 +1,21 @@
 
 
 /*CSS FILE FOR PLAYER BACKGROUND COLORS ON THEIR PAGES*/
-  .Bortles {
-    background-color: #26a69a;
+  .Bortles, #grad {
+    background: linear-gradient(to right, #26a69a 0%, #b49530d7 100%);
     padding-top: 2em;
     padding-bottom: 2em;
     
   }
   
   .Carr {
-    background-color: #9e9e9e;
+    background: linear-gradient(to right, #9e9e9e 0%, #3e3c3bf5 100%);
     padding-top: 2em;
     padding-bottom: 2em;
   }
 
   .Mayfield {
-    background-color: #ec7254;
+    background: linear-gradient(to right,  #ec7254 0%, #3e3c3bf5 100%);
     padding-top: 2em;
     padding-bottom: 2em;
   }

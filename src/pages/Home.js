@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { Accordion, Card } from "react-bootstrap";
 import axios from "axios";
+import {Trumedtok} from './Trumedtok.js';
 
 const Home = () => {
   const [playerData, setPlayerData] = useState([]);
@@ -10,7 +11,7 @@ const Home = () => {
     const response = await axios.get
         ('https://project.trumedianetworks.com/api/nfl/players', {
                 headers: {
-                 Accept: 'application.json', tempToken: '478817da-785c-44c6-b5ab-fb0c285f9a74'
+                 Accept: 'application.json', tempToken: Trumedtok.api_token
          }
         }
     );
