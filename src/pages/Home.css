@@ -11,7 +11,7 @@
   }
   
   .App {
-    background-color: #26a69a;
+    background: linear-gradient(to right, #26a69a 0%, #007991 100%);
     padding-top: 2em;
     padding-bottom: 2em;
   }

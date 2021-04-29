@@ -2,7 +2,7 @@
 
 /*CSS FILE FOR PLAYER BACKGROUND COLORS ON THEIR PAGES*/
   .Bortles, #grad {
-    background: linear-gradient(to right, #26a69a 0%, #b49530d7 100%);
+    background: linear-gradient(to right, #b49530d7 0%, #26a69a 100%);
     padding-top: 2em;
     padding-bottom: 2em;
     
